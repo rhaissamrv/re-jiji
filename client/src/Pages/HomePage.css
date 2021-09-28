@@ -1,0 +1,15 @@
+.home-page-dive{
+  flex-direction :column;
+  margin: 0px;
+
+}
+
+.home-page-div-one{
+  align-content: center;
+  height: 45rem;
+}
+.home-page-div-two{
+display: block;
+text-align: center;
+border: solid;
+}

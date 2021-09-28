@@ -1,0 +1,71 @@
+.listing-form {
+  margin: 100px auto;
+  width: 70%;
+  /* height: 10rem; */
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  background-color: lightblue;
+  border-radius: 10px;
+  display: block;
+  text-align: center;
+}
+
+.form-inputs {
+  font-size: 1rem;
+
+  display: flex;
+
+  align-items: center;
+}
+
+label {
+  padding-left: 2rem;
+}
+
+.form-input {
+  margin-left: 2rem;
+  display: flex;
+}
+
+/* .listing-form {
+    margin: 1rem 0;
+  }
+   */
+.listing-form label,
+.listing-form input,
+.listing-form textarea {
+  display: flex;
+}
+
+.listing-form label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.listing-form input,
+.listing-form select,
+.listing-form textarea {
+  width: 93%;
+  font: inherit;
+  border: 1px solid rgb(163, 30, 30);
+  background: #f8f8f8;
+  padding: 0.15rem 0.25rem;
+}
+
+.listing-form input:focus,
+.listing-form textarea:focus {
+  outline: none;
+  background: #ebebeb;
+  border-color: #510077;
+}
+
+/* .listing-form--invalid label, */
+/* .listing-forml--invalid p {
+    color: red;
+  } */
+
+/* .listing-form-invalid input,
+  .listing-form textarea {
+    /* border-color: red; */
+/* background: #ffd1d1; */
+/* } */

@@ -1,0 +1,20 @@
+.authentication__header {
+  color: rgb(226, 41, 41);
+  text-align: center;
+}
+
+.authentication {
+  width: 90%;
+  max-width: 25rem;
+  margin: 7rem auto;
+  text-align: center;
+  background: linear-gradient(
+    90deg,
+    rgb(0, 217, 255) 10%,
+    rgb(0, 236, 216) 100%
+  );
+}
+
+.authentication form {
+  margin-bottom: 1rem;
+}

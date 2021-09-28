@@ -1,0 +1,10 @@
+*clean up the landing page "/"
+  *keep "main-header" out of the body div
+  *add Home-page to '/' exact 
+
+- style Home-page 
+
+- fix category nav links
+  * make pictures and category blend as one item (just got plastics done , the rest need updating )
+  - make category felxable to window change
+  - add on hover effect on images/links

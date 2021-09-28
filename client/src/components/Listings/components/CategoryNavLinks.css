@@ -1,0 +1,116 @@
+.category-nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-around; */
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  text-align: center;
+  animation: glow 20s linear infinite; 
+}
+.category-nav-links img {
+  width: 15rem;
+  height: 9rem;
+}
+@keyframes glow {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+.category-nav-links img:hover { transform: scale(1.1); }
+
+
+
+/* .li-category-image img{
+  margin: 0;
+  padding: 0;
+  width: 7rem;
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+  
+  
+} */
+
+.category-nav-links li {
+  flex-wrap: wrap;
+  margin: 1rem;
+  align-content: center;
+  width: 11rem;
+  height: 11rem;
+}
+
+.category-nav-links a {
+  /* border: 1px solid transparent; */
+  color: #292929;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+/* this here is when you hover over the nav links  */
+.better-link {
+  border: none;
+}
+
+.category-nav-links a:hover,
+.category-nav-links a.active {
+  /* background: #60d1e0; */
+  border-color: #292929;
+  color: white;
+}
+
+.category-nav-links button {
+  cursor: pointer;
+  border: 1px solid #292929;
+  color: #292929;
+  background: transparent;
+  padding: 0.5rem;
+  font: inherit;
+}
+
+.category-nav-links button:focus {
+  outline: none;
+}
+
+.category-nav-links button:hover,
+.category-nav-links button:active {
+  background: white;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .category-nav-links {
+    flex-direction: row;
+  }
+
+  .category-nav-links li {
+    margin: 0 0.5rem;
+  }
+
+  .category-nav-links a {
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+  }
+
+  .category-nav-links button {
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+  }
+
+  .category-nav-links button:hover,
+  .category-nav-links button:active {
+    background: #f8df00;
+    color: #292929;
+  }
+}
