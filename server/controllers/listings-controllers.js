@@ -124,7 +124,7 @@ const createListing = async (req, res, next) => {
       category,
       title,
       description,
-      //image, 
+      //image,
       quantity,
       location,
       userId

@@ -8,6 +8,7 @@ const useFormNewListing = ({
   title,
   description,
   quantity,
+  image,
   location,
   onSave,
   saveError,
@@ -17,6 +18,7 @@ const useFormNewListing = ({
   const [insertedTitle, setInsertedTitle] = useState(title);
   const [insertedDescription, setInsertedDescription] = useState(description);
   const [insertedQuantity, setInsertedQuantity] = useState(quantity);
+  const [insertedImage, setInsertedImage] = useState(image);
   const [insertedLocation, setInsertedLocation] = useState(location);
 
   const userId = useParams();
@@ -32,7 +34,7 @@ const useFormNewListing = ({
     let newListing = {
       category: insertedCategory,
       title: insertedTitle,
-      //image:'',
+      // image: insertedImage,
       description: insertedDescription,
       quantity: insertedQuantity,
       location: insertedLocation,
@@ -41,6 +43,14 @@ const useFormNewListing = ({
     console.log("Creating new listing", newListing);
     onSave(newListing);
   }
+  // const imageUpload = async (event) => {
+  //   const file = event.target.files[0];
+  //   console.log("file:", file);
+  //   const fileName = encodeURIComponent(file.name);
+  //   console.log("fileName:", fileName);
+  //   setInsertedImage(file);
+  // }
+
   const onInputChange = (event, setFunction) => {
     console.log("Changing input to be ", event.target.value);
     setFunction(event.target.value);
@@ -80,6 +90,14 @@ const useFormNewListing = ({
         value={insertedDescription}
         onChange={(event) => onInputChange(event, setInsertedDescription)}
       />
+      {/* <label htmlFor="image">Image</label>
+      <input
+        className="form-input"
+        id="file"
+        name="file"
+        type="file"
+        onChange={(event) => imageUpload(event)}
+      /> */}
       <label htmlFor="quantity">Quantity</label>
       <input
         className="form-input"

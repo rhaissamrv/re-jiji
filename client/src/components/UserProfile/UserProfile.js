@@ -68,7 +68,7 @@ const UserProfile = () => {
       </div>
       </Card>
       <div>
-      {loadedListings.map((i) => {
+      {loadedListings && loadedListings.map((i) => {
         return (
           <Card>
             <div>Category: {i.category} </div>

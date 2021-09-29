@@ -1,6 +1,7 @@
 const express = require('express');
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const env = require('dotenv').config()
 
 
 // IMPORT ROUTES
@@ -10,7 +11,7 @@ const HttpError = require('./models/http-error');
 
 const app = express();
 
-app.use(bodyParser.json());  
+app.use(express.json());  
 
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -43,7 +44,7 @@ app.use((error, req, res, next) => {
 
 
 mongoose
-.connect('mongodb+srv://rhaissa:rhai123@rejiji.cizim.mongodb.net/Rejiji?retryWrites=true&w=majority')
+.connect('mongodb://localhost:27017/rejiji')
 .catch(err => {
   console.log(err);
 });

@@ -50,12 +50,6 @@ const App = () => {
         <Route path="/logIn">
           <LogIn />
         </Route>
-        {/* <Route path="/listingsPage" exact>
-          <ListingsPage />
-        </Route> */}
-        {/* <Route path="/user_profile">
-          <UserProfile />
-        </Route> */}
         <Route path="/listingsPage" exact>
           <ListingsPage />
         </Route>
